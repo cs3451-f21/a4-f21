@@ -164,10 +164,6 @@ Resources that might be helpful include
 * https://en.wikipedia.org/wiki/Julia_set
 * http://www.wikihow.com/Plot-the-Mandelbrot-Set-By-Hand
 
-## #### Submission
-
-Inform your TA that you did this extra credit.  In addition to your code, you should generate an image using the command "pjgd=" at a full resolution of 500x600.  Name this file "submission-depth-<your-gt-email-id>.png" and include it in the top level folder.
-
 # Authorship Rules
 
 The code that you turn in should be entirely your own. You are allowed to talk to other members of the class and to the instructor and the TA’s about general implementation of the assignment. It is also fine to seek the help of others for general Typescript and Web programming questions. You may not, however, use code that anyone other than yourself has written. The only exceptions are that you should use your code from Project 1A and the source code that we provide for this project. Code that is explicitly not allowed includes code taken from the Web, github, from books, from other students, or from any source other than yourself. You should not show your code to other students. Feel free to seek the help of the instructor and the TA's for suggestions about debugging your code.
@@ -184,11 +180,11 @@ You will check out the project from GitHub Classroom, and submit it there.
 
 Please test that your submission meets these requirements.  For example, after you check in your final version of the assignment to github, check it out again to a new directory and make sure everything builds and runs correctly.
  
-## Development Environment
+# Development Environment
 
 The development environment is the same as used in previous assignments.
 
-## License
+# License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Computer Graphics CS3451 Fall 2021</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.blairmacintyre.me" property="cc:attributionName" rel="cc:attributionURL">Blair MacIntyre</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
