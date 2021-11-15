@@ -11,19 +11,19 @@ Vertex and fragment shaders are used together in pairs, as a *shader program* --
 
 ## Due: Thursday Nov 25th, 11:59pm
 
-This assignment is graded out of 20.
+This assignment is graded out of 15.
 
 ## Rubric
 
-For this assignment, you will implement three shaders. The three required shaders will be worth 6 points. You may implement a fourth shader for 3 bonus points.  
+For this assignment, you will implement three shaders. The three required shaders will be worth 4.5 points each. You may implement a fourth shader for 3 bonus points.  
 
-You will receive 2 points for updating the index.html page as described below (descriptions of which shader you are doing, and how you chose to implement it).
+You will receive 1.5 points for updating the index.html page as described below (descriptions of which shader you are doing, and how you chose to implement it).
 
 For each of the three required shaders, the following criteria will be used:
 
-1. Select a reasonable set of uniforms and attributes for the shader. Modify index.html to as described below (button name, description text). (1)
+1. Select a reasonable set of uniforms and attributes for the shader. Modify index.html to as described below (button name, description text). (0.5)
 2. Modify app.ts to initialize the attributes and uniforms when this shader is used, including updating from the input slider as appropriate. (1)
-3. Reasonable code for the shader modifications (even if it doesn't work fully). (2)
+3. Reasonable code for the shader modifications (even if it doesn't work fully). (1)
 4. Shader works as intended. (2) 
 
 ## Requirements
