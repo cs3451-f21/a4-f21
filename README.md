@@ -11,7 +11,7 @@ Vertex and fragment shaders are used together in pairs, as a *shader program* --
 
 Reminder: WebGL 1 and 2 use different versions of GLSL (although WebGL 2 is backwards compatible with WebGL 1), and both use older versions of GLSL than the most recent versions of OpenGL. You can find plenty of documentation, explanation, and examples on (webglfundamentals.org)[https://webglfundamentals.org] and (webgl2fundamentals.org)[https://webgl2fundamentals.org], along with the (WebGL1)[https://www.khronos.org/files/webgl/webgl-reference-card-1_0.pdf] and (WebGL2)[https://www.khronos.org/files/webgl/webgl-reference-card-2_0.pdf] quick reference cards.  Everything you need to do for this assignment can be done with the WebGL1 version of GLSL.  
 
-## Due: Thursday Nov 25th, 11:59pm
+## Due: Tuesday Nov 23rd, 11:59pm
 
 This assignment is graded out of 15.
 
