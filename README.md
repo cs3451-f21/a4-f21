@@ -13,7 +13,7 @@ Reminder: WebGL 1 and 2 use different versions of GLSL (although WebGL 2 is back
 
 ## Due: Tuesday Nov 23rd, 11:59pm
 
-This assignment is graded out of 15.
+This assignment is graded out of 15.  The assignment is due Tuesday night, but since Wednesday through Friday are holidays, you will incur no late penalty until Saturday.
 
 ## Rubric
 
