@@ -21,14 +21,14 @@ You will receive 1.5 points for updating the index.html page as described below 
 
 For each of the three required shaders, the following criteria will be used:
 
-1. Select a reasonable set of uniforms and attributes for the shader. Modify index.html to as described below (button name, description text). (0.5)
+1. Select a reasonable set of uniforms and attributes for the shader. Modify index.html as described below (button name, description text). (0.5)
 2. Modify app.ts to initialize the attributes and uniforms when this shader is used, including updating from the input slider as appropriate. (1)
 3. Reasonable code for the shader modifications (even if it doesn't work fully). (1)
 4. Shader works as intended. (2) 
 
 ## Requirements
 
-**For this project, you will be implementing three or four shader programs**. Three of them will have most of the work in the fragment shader, and one of them will have most of the work in the vertex shader. You have several options for each of the four shaders, so you can choose whichever seems most interesting to you.  Some of the options in the required shaders can earn you extra credit.
+**For this project, you will be implementing three or four shader programs**. Two or three of them will have most of the work in the fragment shader, and one of them will have most of the work in the vertex shader. You have several options for each of the four shaders, so you can choose whichever seems most interesting to you.  Some of the options in the required shaders can earn you extra credit.
 
 **Include a description in your index.html web page describing what shaders you chose to implement, change the button labels to correspond to the shaders you created, and add any details about how you chose to implement them to the page below the canvas!**
 
@@ -36,15 +36,15 @@ If you do not do the fourth shader, leave the shader for the fourth button as th
  
 1. **Texture Generation (fragment shader)**
 
-   Modify the fragment shader to generate a texture on the fly (i.e., do not pass in a texture, or do not use the texture if you pass one in), from one of the following options:
+   Modify the fragment shader to generate a texture on the fly (i.e., do not pass in a texture, or do not use the texture if you pass one in). **Choose one** of the following options:
 
    1. A checkerboard
 
-      A checkerboard pattern of squares, with alternating black and white squares.  The number of squares within the [u,v] range of [0..1,0..1] (i.e., the plane surface) should vary from 5 to 20, depending on the value of the input slides on the web page.
+      A checkerboard pattern of squares, with alternating black and white squares.  The number of squares within the [u,v] range of [0..1,0..1] (i.e., the plane surface) should vary from 5 to 20, depending on the value of the input slider on the web page.
 	
    2. Mandlebrot fractal (1 bonus point)
 	
-	  Draw the fractal known as the Mandelbrot Set. Display a white or black Mandelbrot set on some colored background. The colors (and possibly color bands) for the background are for you to decide. Let ```z(n+1) = z(n)^2 + c```, where ```z``` and ```c``` are both complex numbers. The Mandelbrot set is essentially a map of what happens when using different values of ```c``` (which correspond to different locations in the plane). Let ```z(0) = (0,0)```, and look at the values ```z(1)=z(0)^2+c, z(2)=z(1)^2+c```, and so on. Plugging the result of a function back into itself is called iteration. If these iterated values stay near zero (never leave a circle of radius ```2```), then draw a white or black dot at the location ```c```. If the values do leave the circle, color them something else. Do this for all the values for values of ```c``` such that ```cx``` is in ```[-2..2]``` and ```cy``` is in ```[-2..2]```. The result is the Mandelbrot Set. Use at least 20 iterations of the function to create your Mandelbrot set.
+	  Draw the fractal known as the Mandelbrot Set. Display a white or black Mandelbrot set on some colored background. The colors (and possibly color bands) for the background are for you to decide. Let ```z(n+1) = z(n)^2 + c```, where ```z``` and ```c``` are both complex numbers. The Mandelbrot set is essentially a map of what happens when using different values of ```c``` (which correspond to different locations in the plane). Let ```z(0) = (0,0)```, and look at the values ```z(1)=z(0)^2+c, z(2)=z(1)^2+c```, and so on. Repeatedly plugging the result of a function back into itself is called iteration. If these iterated values stay near zero (never leave a circle of radius ```2```), then draw a white or black dot at the location ```c```. If the values do leave the circle, color them something else. Do this for all the values for values of ```c``` such that ```cx``` is in ```[-2..2]``` and ```cy``` is in ```[-2..2]```. The result is the Mandelbrot Set. Use at least 20 iterations of the function to create your Mandelbrot set.
 	     
 	  To get more interesting color bands, you can color the fragment differently depending on how many iterating it takes for the values to leave the radius. The provided "pal.png" texture contains the colors in the examples, where the number of iterations (relative to the maximum) were used to do the texture lookup.
      
@@ -52,7 +52,7 @@ If you do not do the fourth shader, leave the shader for the fourth button as th
 
       <img src="mandelbrot.png" width="400">
      
-      You can vary the range of ```cx``` and ```cy``` used (zooming in on part of their ```[-2..2] range) to see some parts in more detail.
+      You can vary the range of ```cx``` and ```cy``` used (zooming in on part of their ```[-2..2]``` range) to see some parts in more detail.
 
       <img src="mandelbrot-zoom.png" width="400">
 
@@ -77,7 +77,7 @@ If you do not do the fourth shader, leave the shader for the fourth button as th
 	
 2. **Transparency (fragment shader)**
 
-	Modify the fragment shader to do something interesting with transparency, from one of the following options:
+	Modify the fragment shader to do something interesting with transparency. **Choose one** from the following options:
 
     1. Turn the plane into *swiss cheese* by adding transparent holes all over it. 
 	
@@ -89,7 +89,7 @@ If you do not do the fourth shader, leave the shader for the fourth button as th
 	 	
 3. **Vertex Shader**
 
-   Modify the vertex shader to deform the objects, from one of the following options. **For this part of the assignment you are additionally required to sub-divide the quad into a grid of smaller quads**, otherwise the vertex shader won't have enough vertices to play with.
+   Modify the vertex shader to deform the objects. **For this part of the assignment you are additionally required to sub-divide the quad into a grid of smaller quads**, otherwise the vertex shader won't have enough vertices to play with. **Choose one** from the following options:
 	
    1. Warble
 
@@ -98,7 +98,7 @@ If you do not do the fourth shader, leave the shader for the fourth button as th
 	
    2. Ripple
 
-	  Like (a), but make the vertices ripple ``outward'' radially from the center of the plane, like a pebble dropped into a pond. 
+	  Like (a), but make the vertices ripple "outward" radially from the center of the plane, like a pebble dropped into a pond. 
 	  
       A new wave should start when you press the space key, and last for a few seconds, getting smaller as it moves toward the edge of the quad.
 	
@@ -112,8 +112,7 @@ If you do not do the fourth shader, leave the shader for the fourth button as th
 
 	  Make the shapes "afraid" of the light by moving points away from the light based on the proximity of the specular highlight to
 	the vertex (this will make a larger area where the light is bright). 
-
-4. **Image Manipulation (fragment shader)** (optional, up to 3 bonus points if you do one of these)
+4. **Image Manipulation (fragment shader)** (**OPTIONAL**, up to 3 bonus points if you do one of these)
 
    Modify the fragment shader to accept two image textures and do some form of image manipulation to blend two image textures, picking from one of the following options:
 
@@ -127,7 +126,7 @@ If you do not do the fourth shader, leave the shader for the fourth button as th
       Will should pay attention to two details.  First, you cannot assume all green pixels are a specific pixel value;  rather, you should check the pixels 
 	  to see how "green" they are and come up with a (simple) metric for when to replace a pixel. Use should use the input slider value to control this threshold, so you can see how changing it affects the removal.
     
-      Second (for 1 bonus point), you should try to
+      Second (for 1 additional bonus point), you should try to
 	  do some blending at the border between green and non-green 
 	  (hint: look at the webglfundamentals.org discussion of image manipulation and convolution kernels).
 	  You should sample the pixels around the target pixel in your green screened image, to see if it is at the boundary of green and non-green values, 
@@ -166,7 +165,7 @@ Resources that might be helpful include
 
 # Authorship Rules
 
-The code that you turn in should be entirely your own. You are allowed to talk to other members of the class and to the instructor and the TA’s about general implementation of the assignment. It is also fine to seek the help of others for general Typescript and Web programming questions. You may not, however, use code that anyone other than yourself has written. The only exceptions are that you should use your code from Project 1A and the source code that we provide for this project. Code that is explicitly not allowed includes code taken from the Web, github, from books, from other students, or from any source other than yourself. You should not show your code to other students. Feel free to seek the help of the instructor and the TA's for suggestions about debugging your code.
+The code that you turn in should be entirely your own. You are allowed to talk to other members of the class and to the instructor and the TAs about general implementation of the assignment. It is also fine to seek the help of others for general Typescript and Web programming questions. You may not, however, use code that anyone other than yourself has written. The only exceptions are that you should use your code from Project 1A and the source code that we provide for this project. Code that is explicitly not allowed includes code taken from the Web, GitHub, from books, from other students, or from any source other than yourself. You should not show your code to other students. Feel free to seek the help of the instructor and the TAs for suggestions about debugging your code.
 
 # Submission
 
@@ -178,7 +177,7 @@ You will check out the project from GitHub Classroom, and submit it there.
 2. run with ```npm run dev```
 3. visit ```http://localhost:3000/index.html```
 
-Please test that your submission meets these requirements.  For example, after you check in your final version of the assignment to github, check it out again to a new directory and make sure everything builds and runs correctly.
+Please test that your submission meets these requirements.  For example, after you check in your final version of the assignment to GitHub, check it out again to a new directory and make sure everything builds and runs correctly.
  
 # Development Environment
 
