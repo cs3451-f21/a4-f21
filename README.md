@@ -9,6 +9,8 @@ Vertex shaders cannot introduce additional vertices, or delete existing ones -- 
 
 Vertex and fragment shaders are used together in pairs, as a *shader program* -- that is, you use one vertex shader and one fragment shader to render something in a particular style, where the outputs of the vertex shader and the inputs of the fragment shader are coordinated.
 
+Reminder: WebGL 1 and 2 use different versions of GLSL (although WebGL 2 is backwards compatible with WebGL 1), and both use older versions of GLSL than the most recent versions of OpenGL. You can find plenty of documentation, explanation, and examples on (webglfundamentals.org)[https://webglfundamentals.org] and (webgl2fundamentals.org)[https://webgl2fundamentals.org], along with the (WebGL1)[https://www.khronos.org/files/webgl/webgl-reference-card-1_0.pdf] and (WebGL2)[https://www.khronos.org/files/webgl/webgl-reference-card-2_0.pdf] quick reference cards.  Everything you need to do for this assignment can be done with the WebGL1 version of GLSL.  
+
 ## Due: Thursday Nov 25th, 11:59pm
 
 This assignment is graded out of 15.
@@ -28,7 +30,7 @@ For each of the three required shaders, the following criteria will be used:
 
 ## Requirements
 
-**For this project, you will be implementing three or four shader programs**. Two or three of them will have most of the work in the fragment shader, and one of them will have most of the work in the vertex shader. You have several options for each of the four shaders, so you can choose whichever seems most interesting to you.  Some of the options in the required shaders can earn you extra credit.
+**For this project, you will be implementing three or four shader programs**. Two or three of them will have most of the work in the fragment shader, and one of them will have most of the work in the vertex shader. **You have several options for each of the four shaders**, so you can choose whichever seems most interesting to you.  Some of the options in the required shaders can earn you extra credit.  Do not be overwhelmed by the number of options.
 
 **Include a description in your index.html web page describing what shaders you chose to implement, change the button labels to correspond to the shaders you created, and add any details about how you chose to implement them to the page below the canvas!**
 
@@ -89,7 +91,7 @@ If you do not do the fourth shader, leave the shader for the fourth button as th
 	 	
 3. **Vertex Shader**
 
-   Modify the vertex shader to deform the objects. **For this part of the assignment you are additionally required to sub-divide the quad into a grid of smaller quads**, otherwise the vertex shader won't have enough vertices to play with. **Choose one** from the following options:
+   Modify the vertex shader to deform the objects. **Choose one** from the following options:
 	
    1. Warble
 
@@ -154,11 +156,10 @@ The starting shader code is in the shaders directory.  We've provided four copie
 
 There are comments at the top reminding you what uniforms and attributes three.js sets for you.
 
-## Reference material/help 
+## Reference material/help on Mandelbrot and Julia sets
 
 Resources that might be helpful include
 
-* https://www.khronos.org/files/webgl/webgl-reference-card-1_0.pdf  (WebGL quick reference card)
 * https://en.wikipedia.org/wiki/Mandelbrot_set
 * https://en.wikipedia.org/wiki/Julia_set
 * http://www.wikihow.com/Plot-the-Mandelbrot-Set-By-Hand
